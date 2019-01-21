@@ -1,0 +1,21 @@
+body{background-color:#3399FF}
+#page{
+ width: 1300px;
+ margin: 0 auto 0 auto;
+ background-color:#33FF99;
+ }
+
+h1 {color: #87CEFA; }
+h2 {color: #87CEEB; }
+h3 {color: #7FFFD4; }
+
+th,td{border:dashed thick black;}
+
+
+td{ border: inset 4px aliceblue;}
+th{ background-color:#fffacd;}
+th{ border: double 6px aliceblue;}
+
+#a-box{ float: left;
+           width: 300px;
+           font-size: 18px;}
