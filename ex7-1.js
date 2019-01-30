@@ -1,3 +1,3 @@
 function sayhello(){
-alert('ようこそ、私の自己紹介!');
+alert('ようこそ、私のページへ!');
 }
