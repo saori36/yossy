@@ -4,16 +4,12 @@
   var overlay = document.getElementById('overlay');
 
   btn.addEventListener('click',function(){
+    
     result();
     overlay.classList.add('fadein');
     output.classList.add('fadein');
   });
 
-    
-   overlay.addEventListener('click', function() {
-    output.classList.remove('fadein');
-    overlay.classList.remove('fadein');
-  });
 
   function result() {
     var index = Math.floor(Math.random() * 6);
