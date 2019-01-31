@@ -3,13 +3,14 @@
   var output = document.getElementById('output');
   var overlay = document.getElementById('overlay');
 
-  btn.addEventListener('click', function() {
+  btn.addEventListener('click',function(){
     result();
     overlay.classList.add('fadein');
     output.classList.add('fadein');
   });
 
-  overlay.addEventListener('click', function() {
+    
+   overlay.addEventListener('click', function() {
     output.classList.remove('fadein');
     overlay.classList.remove('fadein');
   });
@@ -38,4 +39,4 @@
         break;
     }
   }
-})();
+});
