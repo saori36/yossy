@@ -1,37 +1,27 @@
-(function() {
+(function(){
+  'use strict';
+
   var btn = document.getElementById('btn');
-  
 
   btn.addEventListener('click', function(){
-
-    result();
-    overlay.classList.add('fadein');
-    output.classList.add('fadein');
-  });
-
-
-  function result() {
-    var index = Math.floor(Math.random() * 6);
-
-    switch (index) {
-      case 0:
-        output.textContent = '大吉です。';
-        break;
-      case 1:
-        output.textContent = '吉です。';
-        break;
-      case 2:
-        output.textContent = '中吉です。';
-        break;
-      case 3:
-        output.textContent = '小吉です。';
-        break;
-      case 4:
-        output.textContent = '末吉です。';
-        break;
-      default:
-        output.textContent = '凶です。';
-        break;
+    var n = Math.random()
+    if(n < 0.3){
+      this.textContent = '大吉'; // 30%
+    }else if (n < 0.45){
+      this.textContent = '吉';  // 15%
+    }else if (n < 0.60){
+      this.textContent = '中吉';  // 15%
+    }else if (n < 0.85){
+      this.textContent = '小吉';  // 15%
+    }else{
+      this.textContent = '凶';  // 15%
     }
-  }
-});
+
+  });
+  btn.addEventListener('mousedown', function(){
+    this.className = 'pushed';
+  });
+  btn.addEventListener('mouseup', function(){
+    this.className = '';
+  });
+})();

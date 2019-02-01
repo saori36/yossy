@@ -1,60 +1,32 @@
-body {
-  background: #FFFF77;
+@charset "utf-8";
+
+body{
+  background-color: #efefef;
 }
 
-#wrapper {
-  color: #333;
+#btn{
+  margin:30px auto;
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  background:#EF454A;
   text-align: center;
+  line-height:200px;
+  color:#fff;
+  font-size:42px;
+  font-weight: bold;
+  cursor:pointer;
+  opacity:0.9;
+  box-shadow:0 10px 0 #D1483E;
+  border:3px solid #D1483E;
+  user-select: none;
 }
 
-#btn {
-  background: #F27398;
-  border-radius: 6px;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  padding: 20px 60px;
-  text-decoration: none;
+#btn:hover{
+  opacity:1;
 }
 
-#output {
-  background: #fff;
-  border-radius: 10px;
-  color: #333;
-  height: 50vh;
-  line-height: 50vh;
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 50%;
-  z-index: 1000;
+#btn.pushed{
+  margin-top:36px;
+  box-shadow:0 4px 0 #D1483E;
 }
-
-#overlay {
-  background: rgba(0, 0, 0, .7);
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-#output,
-#overlay {
-  opacity: 0;
-  transition: all 0.5s;
-  visibility: hidden;
-}
-
-#output.fadein,
-#overlay.fadein {
-  opacity: 1;
-  visibility: visible;
-}
-
