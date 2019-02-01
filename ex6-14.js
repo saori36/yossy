@@ -1,10 +1,9 @@
 (function() {
   var btn = document.getElementById('btn');
-  var output = document.getElementById('output');
-  var overlay = document.getElementById('overlay');
+  
 
-  btn.addEventListener('click',function(){
-    
+  btn.addEventListener('click', function(){
+
     result();
     overlay.classList.add('fadein');
     output.classList.add('fadein');
